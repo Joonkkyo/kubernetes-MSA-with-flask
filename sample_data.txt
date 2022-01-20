@@ -1,0 +1,63 @@
+{
+  "title": "Evil Dead",
+  "director": "Fede Alvarez",
+  "release_year": "2013",
+  "running_time": "1h 31m",
+  "rating": "6.5"
+}
+
+{
+  "title": "Annabelle Creation",
+  "director": "David F. Sandberg",
+  "release_year": "2017",
+  "running_time": "1h 49m",
+  "rating": "6.5"
+}
+
+{
+  "title": "Insidious The Last Key",
+  "director": "Adam Robitel",
+  "release_year": "2018",
+  "running_time": "1h 43m",
+  "rating": "5.7"
+}
+
+{
+  "title": "Insidious The Last Key",
+  "director": "Adam Robitel",
+  "release_year": "2018",
+  "running_time": "1h 43m",
+  "rating": "5.7"
+}
+
+{
+  "title": "The Conjuring 2",
+  "director": "James Wan",
+  "release_year": "2016",
+  "running_time": "2h 14m",
+  "rating": "7.3"
+}
+
+{
+  "title": "Dawn of Justice",
+  "director": "Zack Snyder",
+  "release_year": "2016",
+  "running_time": "2h 32m",
+  "rating": "6.4"
+}
+
+{
+  "title": "Suicide Squad",
+  "director": "David Ayer",
+  "release_year": "2016",
+  "running_time": "2h 3m",
+  "rating": "5.9"
+}
+
+{
+  "title": "John Wick Chapter 1",
+  "director": "Chad Stahelski",
+  "release_year": "2014",
+  "running_time": "1h 41m",
+  "rating": "7.4"
+}
