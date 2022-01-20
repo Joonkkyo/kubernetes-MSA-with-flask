@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: movie-info-deploy
+  name: movie-info-deploy
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: movie-info-deploy
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: movie-info-deploy
+    spec:
+      containers:
+      - image: jkseo50/movie-info:1.1
+        name: movie-info
+        ports:
+        - containerPort: 3000
+        resources: {}
+status: {}
