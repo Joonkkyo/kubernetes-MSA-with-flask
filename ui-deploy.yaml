@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: ui-deploy
+  name: ui-deploy
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ui-deploy
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: ui-deploy
+    spec:
+      containers:
+      - image: jkseo50/ui:1.5
+        name: ui
+        ports:
+        - containerPort: 4000
+        resources: {}
+status: {}
