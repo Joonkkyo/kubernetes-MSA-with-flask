@@ -1,9 +1,7 @@
 # kubernetes-MSA-with-flask
 도커/쿠버네티스 온라인 부트캠프 with 카카오엔터프라이즈 최종과제
 
-# MSA 구축 보고서 - 서준교
-
-해당 보고서에서는 UI 웹서버와 RestAPI 기반 flask 서버를 쿠버네티스 클러스터에서 MSA 방식으로 구축한 과정을 기술합니다.
+해당 문서에서는 UI 웹서버와 RestAPI 기반 flask 서버를 쿠버네티스 클러스터에서 MSA 방식으로 구축한 과정을 기술합니다.
 
 # 1. UI Pod
 
@@ -11,7 +9,7 @@ MSA 방식으로 전환하기 위하여 github에 존재하는 website 폴더([h
 
 ## 1. 폴더 구조 및 내용
 
-![Untitled](MSA%20%E1%84%80%E1%85%AE%E1%84%8E%E1%85%AE%E1%86%A8%20%E1%84%87%E1%85%A9%E1%84%80%E1%85%A9%E1%84%89%E1%85%A5%20-%20%E1%84%89%E1%85%A5%E1%84%8C%E1%85%AE%E1%86%AB%E1%84%80%E1%85%AD%20bd50973a2f0946b687a81dc33aaee3e6/Untitled.png)
+![image](https://user-images.githubusercontent.com/12121282/150470118-8e69765d-312b-4a12-a2b3-f3830adf17e7.png)
 
 ![Untitled](MSA%20%E1%84%80%E1%85%AE%E1%84%8E%E1%85%AE%E1%86%A8%20%E1%84%87%E1%85%A9%E1%84%80%E1%85%A9%E1%84%89%E1%85%A5%20-%20%E1%84%89%E1%85%A5%E1%84%8C%E1%85%AE%E1%86%AB%E1%84%80%E1%85%AD%20bd50973a2f0946b687a81dc33aaee3e6/Untitled%201.png)
 
