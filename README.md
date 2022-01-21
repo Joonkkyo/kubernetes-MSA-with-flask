@@ -195,9 +195,9 @@ containerPort와 targetPort를 일치시켜 외부에서 접근 가능한 nodePo
 
 RestAPI 기반의 flask 서버를 구성하기 위한 폴더의 구조는 다음과 같습니다. 
 
-![Untitled](MSA%20%E1%84%80%E1%85%AE%E1%84%8E%E1%85%AE%E1%86%A8%20%E1%84%87%E1%85%A9%E1%84%80%E1%85%A9%E1%84%89%E1%85%A5%20-%20%E1%84%89%E1%85%A5%E1%84%8C%E1%85%AE%E1%86%AB%E1%84%80%E1%85%AD%20bd50973a2f0946b687a81dc33aaee3e6/Untitled%202.png)
+![image](https://user-images.githubusercontent.com/12121282/150470569-8ce4061f-fa5e-4b01-ac32-31d46370fe53.png)
 
-flask 서버 실행을 위한 `[app.py](http://app.py)` 파일과 이미지 빌드를 위한 Dockerfile로 구성하였습니다. `app.py` 파일의 내용은 다음과 같습니다.
+flask 서버 실행을 위한 `app.py` 파일과 이미지 빌드를 위한 Dockerfile로 구성하였습니다. `app.py` 파일의 내용은 다음과 같습니다.
 
 ```python
 from flask import Flask, request, Response
