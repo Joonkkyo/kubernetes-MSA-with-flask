@@ -11,13 +11,13 @@ MSA 방식으로 전환하기 위하여 github에 존재하는 website 폴더([h
 
 ![image](https://user-images.githubusercontent.com/12121282/150470118-8e69765d-312b-4a12-a2b3-f3830adf17e7.png)
 
-![Untitled](MSA%20%E1%84%80%E1%85%AE%E1%84%8E%E1%85%AE%E1%86%A8%20%E1%84%87%E1%85%A9%E1%84%80%E1%85%A9%E1%84%89%E1%85%A5%20-%20%E1%84%89%E1%85%A5%E1%84%8C%E1%85%AE%E1%86%AB%E1%84%80%E1%85%AD%20bd50973a2f0946b687a81dc33aaee3e6/Untitled%201.png)
+![image](https://user-images.githubusercontent.com/12121282/150470158-6267875c-1c32-46e6-a8e7-da95487b84f7.png)
 
 왼쪽이 기존 폴더의 구조이고, 오른쪽이 MSA 전환을 위하여 변경된 폴더 구조입니다. flask 서버를 기반으로 UI를 구동하기 위해 전반적인 폴더의 구조를 변경하고, 일부 파일을 추가하였습니다.
 
 - static 폴더를 추가하고 스타일시트, 자바스트립트, 이미지 파일을 해당 폴더 내부로 이동시켜 정적 파일 참조를 쉽게 할 수 있도록 변경하였습니다.
 - html 파일을 저장하는 templates 폴더를 생성하고 기존에 존재하는 html 파일을 해당 폴더로 이동시켰습니다.
-- flask 서버 가동을 위한 [`app.py`](http://app.py) 파일을 생성하여 각각의 웹페이지에 대한 라우팅 처리와 RestAPI와의 통신을 할 수 있도록 구현하였습니다.
+- flask 서버 가동을 위한 `app.py` 파일을 생성하여 각각의 웹페이지에 대한 라우팅 처리와 RestAPI와의 통신을 할 수 있도록 구현하였습니다.
 
 ```python
 from flask import Flask, render_template
@@ -379,7 +379,7 @@ kubectl apply -f ui-deploy.yaml
 kubectl apply -f movie-info-deploy.yaml
 ```
 
-![Untitled](MSA%20%E1%84%80%E1%85%AE%E1%84%8E%E1%85%AE%E1%86%A8%20%E1%84%87%E1%85%A9%E1%84%80%E1%85%A9%E1%84%89%E1%85%A5%20-%20%E1%84%89%E1%85%A5%E1%84%8C%E1%85%AE%E1%86%AB%E1%84%80%E1%85%AD%20bd50973a2f0946b687a81dc33aaee3e6/Untitled%203.png)
+![image](https://user-images.githubusercontent.com/12121282/150470205-93b9e6c8-5fd0-4366-abad-d0fd0495409f.png)
 
 - Service 생성
 
@@ -388,14 +388,15 @@ kubectl expose deployment ui-deploy --name ui-svc --type=NodePort
 kubectl expose deployment movie-info-deploy --name movie-info-svc --type=NodePort
 ```
 
-![Untitled](MSA%20%E1%84%80%E1%85%AE%E1%84%8E%E1%85%AE%E1%86%A8%20%E1%84%87%E1%85%A9%E1%84%80%E1%85%A9%E1%84%89%E1%85%A5%20-%20%E1%84%89%E1%85%A5%E1%84%8C%E1%85%AE%E1%86%AB%E1%84%80%E1%85%AD%20bd50973a2f0946b687a81dc33aaee3e6/Untitled%204.png)
+![image](https://user-images.githubusercontent.com/12121282/150470217-04e386fa-32d9-40d8-b3c0-c300835b2dd0.png)
 
 # 4. 접속 결과
 
 - 172.30.6.154:30782
 
-![Untitled](MSA%20%E1%84%80%E1%85%AE%E1%84%8E%E1%85%AE%E1%86%A8%20%E1%84%87%E1%85%A9%E1%84%80%E1%85%A9%E1%84%89%E1%85%A5%20-%20%E1%84%89%E1%85%A5%E1%84%8C%E1%85%AE%E1%86%AB%E1%84%80%E1%85%AD%20bd50973a2f0946b687a81dc33aaee3e6/Untitled%205.png)
+![image](https://user-images.githubusercontent.com/12121282/150470260-3799d24d-18ab-4e10-ac9e-dde14d3f9a48.png)
 
 - 172.30.6.154:31141
 
-![Untitled](MSA%20%E1%84%80%E1%85%AE%E1%84%8E%E1%85%AE%E1%86%A8%20%E1%84%87%E1%85%A9%E1%84%80%E1%85%A9%E1%84%89%E1%85%A5%20-%20%E1%84%89%E1%85%A5%E1%84%8C%E1%85%AE%E1%86%AB%E1%84%80%E1%85%AD%20bd50973a2f0946b687a81dc33aaee3e6/Untitled%206.png)
+![image](https://user-images.githubusercontent.com/12121282/150470274-fb548adf-3fc2-46b3-9833-6aef9a9c9b2a.png)
+
