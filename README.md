@@ -1,5 +1,4 @@
-# kubernetes-MSA-with-flask
-도커/쿠버네티스 온라인 부트캠프 with 카카오엔터프라이즈 최종과제
+# kubernetes-MSA-with-flask (도커/쿠버네티스 온라인 부트캠프 with 카카오엔터프라이즈 최종과제)
 
 해당 문서에서는 UI 웹서버와 RestAPI 기반 flask 서버를 쿠버네티스 클러스터에서 MSA 방식으로 구축한 과정을 기술합니다.
 
@@ -8,12 +7,12 @@
 MSA 방식으로 전환하기 위하여 github에 존재하는 website 폴더([https://github.com/DevenRathod2/simple-movie-website-html](https://github.com/DevenRathod2/simple-movie-website-html)) 에서 변경한 점에 대해 설명하도록 하겠습니다.
 
 ## 1. 폴더 구조 및 내용
-
+- 폴더 구조 (before)
 ![image](https://user-images.githubusercontent.com/12121282/150470118-8e69765d-312b-4a12-a2b3-f3830adf17e7.png)
-
+- 폴더 구조 (after)
 ![image](https://user-images.githubusercontent.com/12121282/150470158-6267875c-1c32-46e6-a8e7-da95487b84f7.png)
 
-왼쪽이 기존 폴더의 구조이고, 오른쪽이 MSA 전환을 위하여 변경된 폴더 구조입니다. flask 서버를 기반으로 UI를 구동하기 위해 전반적인 폴더의 구조를 변경하고, 일부 파일을 추가하였습니다.
+위가 기존 폴더의 구조이고,  MSA 전환을 위하여 변경된 폴더 구조입니다. flask 서버를 기반으로 UI를 구동하기 위해 전반적인 폴더의 구조를 변경하고, 일부 파일을 추가하였습니다.
 
 - static 폴더를 추가하고 스타일시트, 자바스트립트, 이미지 파일을 해당 폴더 내부로 이동시켜 정적 파일 참조를 쉽게 할 수 있도록 변경하였습니다.
 - html 파일을 저장하는 templates 폴더를 생성하고 기존에 존재하는 html 파일을 해당 폴더로 이동시켰습니다.
