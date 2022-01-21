@@ -8,8 +8,10 @@ MSA 방식으로 전환하기 위하여 github에 존재하는 website 폴더([h
 
 ## 1. 폴더 구조 및 내용
 - 폴더 구조 (before)
+
 ![image](https://user-images.githubusercontent.com/12121282/150470118-8e69765d-312b-4a12-a2b3-f3830adf17e7.png)
 - 폴더 구조 (after)
+
 ![image](https://user-images.githubusercontent.com/12121282/150470158-6267875c-1c32-46e6-a8e7-da95487b84f7.png)
 
 위가 기존 폴더의 구조이고,  MSA 전환을 위하여 변경된 폴더 구조입니다. flask 서버를 기반으로 UI를 구동하기 위해 전반적인 폴더의 구조를 변경하고, 일부 파일을 추가하였습니다.
