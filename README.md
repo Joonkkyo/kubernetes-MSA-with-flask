@@ -401,3 +401,6 @@ kubectl expose deployment movie-info-deploy --name movie-info-svc --type=NodePor
 
 ![image](https://user-images.githubusercontent.com/12121282/150470274-fb548adf-3fc2-46b3-9833-6aef9a9c9b2a.png)
 
+# 시연 영상
+
+https://www.youtube.com/watch?v=4llDn9-3x44
