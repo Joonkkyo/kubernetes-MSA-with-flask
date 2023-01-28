@@ -1,6 +1,6 @@
 # kubernetes-MSA-with-flask (도커/쿠버네티스 온라인 부트캠프 with 카카오엔터프라이즈 최종과제)
 
-해당 문서에서는 UI 웹서버와 RestAPI 기반 flask 서버를 쿠버네티스 클러스터에서 MSA 방식으로 구축한 과정을 기술합니다.
+해당 문서에서는 UI 웹서버와 REST API 기반 flask 서버를 쿠버네티스 클러스터에서 MSA 방식으로 구축한 과정을 기술합니다.
 
 # 1. UI Pod
 
